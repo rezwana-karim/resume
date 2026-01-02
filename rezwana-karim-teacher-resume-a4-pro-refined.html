@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head> <meta charset="utf-8" /> <title>Rezwana Karim — Teacher Resume</title> <meta name="viewport" content="width=device-width,initial-scale=1" /> <!-- Tailwind CDN --> <script src="https://cdn.tailwindcss.com"></script> <style>
+/* =========================
+   Professional A4 Resume CSS (Refined)
+   Black text, white background, print-first
+   ========================= */
+
+/* A4 print setup */
+@page { size: A4; margin: 10mm; }
+
+:root{
+  --text: #000000;
+  --muted: #2f2f2f;
+  --hairline: #000000;
+  --card-border: #ffffff; /* requested: white borders */
+  --gap: 10px;
+  --radius: 10px;
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+  background: #ffffff;
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.sheet{
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Type scale */
+h1,h2,h3{ margin:0; }
+p{ margin:0; }
+ul{ margin:0; padding-left: 16px; }
+li{ margin: 0 0 2px 0; }
+
+.text-2xl{ font-size: 20px; }
+.text-sm{ font-size: 11.5px; }
+.xs{ font-size: 11px; }
+.xxs{ font-size: 10px; }
+
+.leading-tight{ line-height: 1.15; }
+.font-extrabold{ font-weight: 800; letter-spacing: -0.2px; }
+.font-semibold{ font-weight: 650; }
+.font-medium{ font-weight: 560; }
+
+.muted{ color: var(--muted); }
+.accent{ color: var(--text); text-decoration: none; }
+
+/* Layout helpers used in the HTML */
+.flex{ display:flex; }
+.items-start{ align-items:flex-start; }
+.items-center{ align-items:center; }
+.justify-between{ justify-content: space-between; }
+.flex-1{ flex: 1 1 0%; }
+.text-right{ text-align:right; }
+
+.grid{ display:grid; }
+.grid-cols-12{ grid-template-columns: repeat(12, minmax(0, 1fr)); }
+.col-span-4{ grid-column: span 4 / span 4; }
+.col-span-8{ grid-column: span 8 / span 8; }
+.gap-3{ gap: 12px; }
+
+/* Controlled vertical spacing between sections */
+.stack{ display:flex; flex-direction:column; gap: var(--gap); }
+
+/* Compact utility margins (kept for content-level rhythm) */
+.mt-1{ margin-top: 4px; }
+.mt-2{ margin-top: 6px; }
+.mt-3{ margin-top: 10px; }
+.mb-2{ margin-bottom: 8px; }
+
+.p-3{ padding: 10px; }
+.pl-4{ padding-left: 16px; }
+
+.list-disc{ list-style: disc; }
+
+/* Header */
+header{
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid var(--hairline);
+  margin: 0 0 12px 0;
+}
+
+header .muted{ color: var(--muted); }
+header .text-sm{ line-height: 1.35; }
+
+/* Section titles */
+.section-title{
+  font-size: 12px;
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: .9px;
+  margin-bottom: 6px;
+}
+
+/* Cards (white border as requested; spacing refined) */
+.card{
+  background: #ffffff;
+  border-radius: var(--radius);
+  border: 1px solid var(--card-border);
+  padding: 10px 11px;
+}
+
+/* Improve readability inside cards */
+.card p + p{ margin-top: 4px; }
+.card p + ul{ margin-top: 6px; }
+.card ul + p{ margin-top: 6px; }
+
+/* Keep content compact to stay within 1 page */
+.compact p, .compact li{ line-height: 1.38; }
+.compact li{ margin-bottom: 2px; }
+
+/* Prevent ugly page breaks */
+.avoid-break{ break-inside: avoid; page-break-inside: avoid; }
+
+/* Print tweaks */
+@media print{
+  html, body{ background:#ffffff; color: var(--text); }
+  .sheet{ margin: 0; }
+  a{ color: var(--text); text-decoration:none; }
+}
+</style>
+</head>
+<body> <div class="sheet"> <!-- Header --> <header class="flex items-start justify-between mb-2 avoid-break"> <div> <h1 class="text-2xl font-extrabold leading-tight">Rezwana Karim</h1> <p class="mt-1 xs muted">Aspiring English-Medium Teacher • English Literature (B.A.)</p> <p class="mt-2 xxs muted">Seeking: Teacher position</p> </div> <div class="text-right xxs muted"> <div class="font-medium accent">Contact</div> <div class="mt-1">941, East Monipur, Mirpur 2, Dhaka</div> <div class="mt-1">Phone: +880-1743010957</div> <div class="mt-1">Email: rezwanakarimlamia25@gmail.com</div> <div class="mt-1">DOB: 23 Oct 2001</div> </div> </header> <!-- Main content: two-column layout --> <div class="flex-1 grid grid-cols-12 gap-3 compact"> <!-- Left column (skills, education, tools) --> <aside class="col-span-4 stack"> <section class="card p-3 avoid-break"> <h3 class="text-sm font-semibold muted">Core Teaching Strengths</h3> <ul class="mt-2 xxs muted list-disc pl-4 compact-list"> <li>Strong English communication (speaking & writing)</li> <li>Lesson planning & differentiated instruction</li> <li>Student engagement, classroom management</li> <li>Creative storytelling & activity-based learning</li> <li>Assessment & feedback for learning growth</li> <li>Caring, responsible, student-centered approach</li> </ul> </section> <section class="card p-3 avoid-break"> <h3 class="text-sm font-semibold muted">Technical & Classroom Tools</h3> <ul class="mt-2 xxs muted list-disc pl-4"> <li>MS Office (Word, PowerPoint, Excel)</li> <li>Google Workspace (Docs, Slides, Forms)</li> <li>Online teaching platforms / video conferencing</li> <li>Basic Canva slide/visual creation</li> </ul> </section> <section class="card p-3 avoid-break"> <h3 class="text-sm font-semibold muted">Education</h3> <div class="mt-2 xxs muted"> <div class="font-medium">North South University — B.A. in English Literature</div> <div class="xxs muted">2019 — 2024</div> <div class="mt-2 font-medium">Ideal School & College, Motijheel</div> <div class="xxs muted">HSC 2017–2018 • SSC 2015–2016</div> </div> </section> <section class="card p-3 avoid-break"> <h3 class="text-sm font-semibold muted">Languages & Certifications</h3> <p class="mt-2 xxs muted">Bangla (native), English (fluent)</p> <p class="mt-1 xxs muted">Certificate: Workshop participation — communication & digital tools (university)</p> </section> <section class="card p-3 avoid-break"> <h3 class="text-sm font-semibold muted">Personal Attributes</h3> <ul class="mt-2 xxs muted list-disc pl-4"> <li>Empathetic, patient, responsible</li> <li>Organized, punctual, dependable</li> <li>Collaborative team player</li> </ul> </section> </aside> <!-- Right column (summary, experience, teaching approach) --> <main class="col-span-8 stack"> <section class="p-3 avoid-break"> <h3 class="text-sm font-semibold muted">Professional Summary</h3> <p class="mt-2 xxs muted"> Compassionate and creative English Literature graduate with proven ability to design engaging lessons, manage classrooms, and motivate learners. Experienced in producing clear instructional materials, leading group research presentations, and coordinating student events. Ready to contribute to a reputable school with strong English-medium communication, innovative lesson planning, and a caring, student-focused teaching approach aligned to the school's values. </p> </section> <section class="card p-3 avoid-break"> <h3 class="text-sm font-semibold muted">Relevant Experience & Academic Roles</h3> <div class="mt-2 xxs muted"> <div class="font-medium">Research & Presentation Lead — North South University</div> <ul class="list-disc pl-4 mt-1"> <li>Led group projects producing literature reviews, executive summaries and slide decks; presented findings to faculty panels.</li> <li>Planned rehearsals, provided peer feedback and improved clarity & delivery for team presenters.</li> </ul> </div> <div class="mt-3 xxs muted"> <div class="font-medium">Content Creator & Reviewer — Coursework / Freelance</div> <ul class="list-disc pl-4 mt-1"> <li>Prepared bilingual (Bangla–English) lesson-like materials, practice worksheets and reading comprehension exercises.</li> <li>Proofread and improved clarity, tone and correctness of student-facing documents and presentations.</li> </ul> </div> <div class="mt-3 xxs muted"> <div class="font-medium">Event & Classroom Coordinator — University Activities</div> <ul class="list-disc pl-4 mt-1"> <li>Organized outreach and on-day logistics for academic events; managed registrations and facilitated audience engagement.</li> </ul> </div> </section> <section class="p-3 avoid-break"> <h3 class="text-sm font-semibold muted">Teaching Approach — Practical Examples</h3> <ul class="mt-2 xxs muted list-disc pl-4"> <li>Activity-based lessons: pair/group work, role plays and storytelling to build speaking confidence and comprehension.</li> <li>Differentiation: tiered exercises and mixed-ability grouping to ensure progress for all learners.</li> <li>Assessment for learning: quick formative checks, targeted feedback and simple rubrics to monitor growth.</li> <li>Classroom routines: clear instructions, positive reinforcement and consistent expectations to maintain a safe learning space.</li> </ul> </section> <section class="card p-3 avoid-break"> <h3 class="text-sm font-semibold muted">Teaching Fit for English-Medium Schools</h3> <ul class="mt-2 xxs muted list-disc pl-4"> <li>English-medium background and fluent English communication suited to the position's language requirement.</li> <li>Proven ability to engage students through creative lesson design and motivating classroom activities.</li> <li>Responsible, punctual and dependable.</li> <li>Open to professional development — eager to join a supportive school environment and grow as an educator.</li> </ul> </section> <section class="p-3 avoid-break"> <h3 class="text-sm font-semibold muted">Achievements & Availability</h3> <p class="mt-2 xxs muted">Consistent academic project leadership; recognized by peers for clear communication and reliable coordination. Available to begin immediately. References and sample lesson plans available upon request.</p> </section> </main> </div> <!-- Footer: compact --> <footer class="mt-2 text-right xxs muted avoid-break">  </footer> </div>
+</body>
+</html>
